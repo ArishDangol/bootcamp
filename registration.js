@@ -19,6 +19,14 @@ registration.onsubmit = function(event){
     let name  = document.getElementById("name").value;
     let interest  = getSelected(document.getElementById("interests"));
     let dob = document.getElementById("dob").value;
-    let darkMode = document.getElementById("dark-mode").selected;
+    let darkMode = document.getElementById("dark-mode").checked;
+    const data = {
+        name  : name,
+        interest : interest,
+        dob : dob,
+        darkMode : darkMode,
+        
+    };
+    console.log(data);
 };
 
