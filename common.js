@@ -11,9 +11,8 @@ function goTo(filename){
     }
     let newLink = link.join("/");
     newLink = newLink + "/" + filename;
-    window.location.herf = newLink;
+    window.location.href = newLink;
 }
-
 if(!userInfo){
     goTo("registration.html");
 }
